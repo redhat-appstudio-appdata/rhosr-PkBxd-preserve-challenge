@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: apicurio-registry-33ma
+  namespace: ralphjbean-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:47aec7b6df0b45c6acf9a51199d3bd0a80b6801e1e29f6ed6bfea635220a07a0
+        name: container-image
+        resources: {}
+status: {}
